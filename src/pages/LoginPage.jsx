@@ -17,16 +17,7 @@ export default function LoginPage() {
       </Box>
 
       <Center h="100vh">
-        {/* <Text p={2} style={{
-         color:"black",
-         backgroundColor:"#C4D7E0",
-         fontSize:"40px",
-         fontFamily:"fantasy",
-         borderRadius:"22%"
-         // boxShadow: "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
-       }}>
-         Ping- The chatApp
-       </Text>  */}
+    
 
         <Stack
           align="center"
