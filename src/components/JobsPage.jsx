@@ -23,6 +23,7 @@ import {
 } from "@chakra-ui/react";
 import Pagination from "./Pagination";
 import ModalButton from "./ModalButton";
+import Navbar from "./Navbar";
 
 const JobsPage = () => {
   const [data, setdata] = useState([]);
@@ -44,6 +45,7 @@ const JobsPage = () => {
 
   return (
     <Box>
+      <Navbar/>
       <Grid
         h="auto"
         gap={"30px"}
@@ -53,7 +55,7 @@ const JobsPage = () => {
           sm: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",
           lg: "repeat(3, 1fr)",
-          xl: "repeat(4, 1fr)",
+          xl: "repeat(3, 1fr)",
         }}
       >
         {currentPost.map((e) => (

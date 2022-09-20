@@ -39,7 +39,7 @@ const ModalButton = () => {
             <Button colorScheme="red" mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button colorScheme="blue"  onClick={onClose} variant="ghost">Submit</Button>
+            <Button colorScheme="green"  onClick={onClose} variant="ghost">Submit</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
