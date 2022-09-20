@@ -19,16 +19,15 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  useDisclosure
+  useDisclosure,
 } from "@chakra-ui/react";
 import Pagination from "./Pagination";
 import ModalButton from "./ModalButton";
 
-
 const JobsPage = () => {
   const [data, setdata] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(45);
+  const [postPerPage, setPostPerPage] = useState(50);
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -54,7 +53,7 @@ const JobsPage = () => {
           sm: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",
           lg: "repeat(3, 1fr)",
-          xl: "repeat(3, 1fr)",
+          xl: "repeat(4, 1fr)",
         }}
       >
         {currentPost.map((e) => (
@@ -94,21 +93,7 @@ const JobsPage = () => {
                   <Text as="samp">{}</Text>
                 </Box>
                 <Center>
-                  {/* <Button
-                    w={"40%"}
-                    mt={8}
-                    bg={useColorModeValue("#151f21", "gray.900")}
-                    color={"white"}
-                    rounded={"md"}
-                    _hover={{
-                      transform: "translateY(-2px)",
-                      boxShadow: "lg",
-                    }}
-                  >
-                    Apply
-                  </Button> */}
-                  <ModalButton/>
-
+                  <ModalButton />
                 </Center>
               </Box>
             </Box>
